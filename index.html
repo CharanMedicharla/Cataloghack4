@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Children Vaccination</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Children Vaccination Portal</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#vaccines">Vaccines</a></li>
+                <li><a href="#centers">Vaccination Centers</a></li>
+                <li><a href="#appointment">Book Appointment</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to the Children Vaccination Portal</h2>
+        <p>Keep your children safe by staying updated on the latest vaccination schedules and booking appointments with ease.</p>
+    </section>
+
+    <section id="vaccines">
+        <h2>Available Vaccines</h2>
+        <ul>
+            <li>MMR (Measles, Mumps, Rubella)</li>
+            <li>DTP (Diphtheria, Tetanus, Pertussis)</li>
+            <li>Polio Vaccine</li>
+            <li>Hepatitis B</li>
+            <li>Chickenpox</li>
+        </ul>
+    </section>
+
+    <section id="centers">
+        <h2>Vaccination Centers</h2>
+        <p>Find the nearest vaccination center:</p>
+        <ul>
+            <li>City Hospital - 123 Main St.</li>
+            <li>Community Health Center - 456 Elm St.</li>
+            <li>Pediatric Care - 789 Maple St.</li>
+        </ul>
+    </section>
+
+    <section id="appointment">
+        <h2>Book an Appointment</h2>
+        <form>
+            <label for="name">Child's Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="age">Child's Age:</label>
+            <input type="number" id="age" name="age" required><br><br>
+
+            <label for="vaccine">Select Vaccine:</label>
+            <select id="vaccine" name="vaccine" required>
+                <option value="mmr">MMR</option>
+                <option value="dtp">DTP</option>
+                <option value="polio">Polio</option>
+                <option value="hepatitis">Hepatitis B</option>
+                <option value="chickenpox">Chickenpox</option>
+            </select><br><br>
+
+            <label for="center">Select Center:</label>
+            <select id="center" name="center" required>
+                <option value="city-hospital">City Hospital</option>
+                <option value="community-health">Community Health Center</option>
+                <option value="pediatric-care">Pediatric Care</option>
+            </select><br><br>
+
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required><br><br>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Children Vaccination Portal. All Rights Reserved.</p>
+    </footer>
+<script src="script.js"></script>
+
+</body>
+</html>
